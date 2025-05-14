@@ -36,6 +36,8 @@ struct CrewScrollView: View {
                                     .foregroundStyle(.white.opacity(0.5))
                             }
                         }
+                        .accessibilityElement()
+                        .accessibilityLabel("\(crewMember.astronaut.name), \(crewMember.role)")
                         .padding(.horizontal)
                     }
                 }
